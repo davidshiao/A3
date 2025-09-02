@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>環境部綜規司 - 新系統功能需求簡報</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        .tab.active {
+            border-color: #3b82f6;
+            color: #3b82f6;
+            background-color: #eff6ff;
+        }
+        .nav-button.active {
+            background-color: #1d4ed8;
+            color: white;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900">環境部綜規司</h1>
+            <p class="text-lg md:text-xl text-slate-600 mt-2">新系統功能需求簡報</p>
+        </header>
+
+        <!-- Main Navigation -->
+        <nav class="flex justify-center bg-white p-2 rounded-lg shadow-md mb-8">
+            <button data-target="home" class="nav-button text-sm md:text-base font-medium text-slate-700 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md transition-colors duration-300 active">
+                專案總覽
+            </button>
+            <button data-target="system-enhancement" class="nav-button text-sm md:text-base font-medium text-slate-700 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md transition-colors duration-300">
+                列管系統功能強化
+            </button>
+            <button data-target="committee-digitization" class="nav-button text-sm md:text-base font-medium text-slate-700 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md transition-colors duration-300">
+                外聘委員評比電子化
+            </button>
+        </nav>
+
+        <main id="presentation-content">
+            <!-- Slide: Home / Overview -->
+            <section id="home" class="slide active">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-blue-600 mb-4 border-b pb-2">專案目標</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        為提升行政效率與管考品質，本次系統開發計畫主要分為兩大核心主軸。旨在透過數位化與流程優化，強化內部專案追蹤能力，並將外部委員評比業務全面電子化，實現無紙化、高效率的審查作業流程。
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6 mt-8">
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-slate-800 mb-2">一、列管系統功能強化</h3>
+                            <p class="text-slate-600">針對現有「列管系統」新增四大核心功能，以強化專案追蹤、績效考核與跨單位協作效率，確保各項業務能精準管控、如期如質完成。</p>
+                        </div>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-slate-800 mb-2">二、外聘委員評比電子化</h3>
+                            <p class="text-slate-600">將現行邀請外聘委員進行的各項評比作業全面線上化，簡化資料提報、審閱、意見回覆及分數彙整流程，提升評比作業的公正性與時效性。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide: System Enhancement -->
+            <section id="system-enhancement" class="slide">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-blue-600 mb-6 border-b pb-2">列管系統功能強化：四大核心需求</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Card 1 -->
+                        <div class="card-hover bg-slate-50 p-5 rounded-lg border border-slate-200">
+                            <h3 class="font-bold text-lg text-slate-800">地方環保機關績效考核</h3>
+                            <p class="text-sm text-slate-500 mt-1 mb-3">建立對全國地方機關的線上績效考核流程。</p>
+                            <span class="text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded-full">預計完成: 115年3月31日</span>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card-hover bg-slate-50 p-5 rounded-lg border border-slate-200">
+                            <h3 class="font-bold text-lg text-slate-800">首長指示及部務會議列管</h3>
+                            <p class="text-sm text-slate-500 mt-1 mb-3">有效管理首長交辦、需多單位協作的列管案件。</p>
+                            <span class="text-xs font-semibold bg-orange-100 text-orange-800 px-2 py-1 rounded-full">預計完成: 115年6月30日</span>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card-hover bg-slate-50 p-5 rounded-lg border border-slate-200">
+                            <h3 class="font-bold text-lg text-slate-800">施政績效指標列管</h3>
+                            <p class="text-sm text-slate-500 mt-1 mb-3">追蹤本部年度施政目標與關鍵績效指標達成情形。</p>
+                            <span class="text-xs font-semibold bg-orange-100 text-orange-800 px-2 py-1 rounded-full">預計完成: 115年6月30日</span>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="card-hover bg-slate-50 p-5 rounded-lg border border-slate-200">
+                            <h3 class="font-bold text-lg text-slate-800">行政院重要政策指標追蹤</h3>
+                            <p class="text-sm text-slate-500 mt-1 mb-3">精準管控行政院核定之重要政策指標執行進度。</p>
+                            <span class="text-xs font-semibold bg-orange-100 text-orange-800 px-2 py-1 rounded-full">預計完成: 115年6月30日</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Details for System Enhancement -->
+                    <div class="mt-8">
+                        <div class="border-b border-gray-200">
+                            <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                                <button class="tab active whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-tab="se-1">績效考核</button>
+                                <button class="tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="se-2">首長指示</button>
+                                <button class="tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="se-3">施政指標</button>
+                                <button class="tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="se-4">政院指標</button>
+                            </nav>
+                        </div>
+                        <div class="pt-6">
+                            <div id="se-1" class="tab-content">
+                                <h4 class="font-bold text-xl mb-3 text-slate-700">地方環保機關績效考核：功能說明</h4>
+                                <ul class="list-disc list-inside space-y-3 text-slate-600">
+                                    <li><strong class="font-semibold text-slate-700">計畫建立：</strong>綜規司上傳年度計畫(PDF)，並依計畫內容開設該年度的考核架構，包含考核獎項、考核單位及計分權重。</li>
+                                    <li><strong class="font-semibold text-slate-700">成績填報：</strong>各考核單位就負責獎項，線上提出對各縣市的考核成績、結果與意見。主政單位統一填報。</li>
+                                    <li><strong class="font-semibold text-slate-700">報表產出：</strong>系統自動彙整產出分數總表、總成績等第、考核結果總表、及各縣市意見彙整表。</li>
+                                </ul>
+                            </div>
+                            <div id="se-2" class="tab-content hidden">
+                                <h4 class="font-bold text-xl mb-3 text-slate-700">首長指示及部務會議列管：功能說明</h4>
+                                <ul class="list-disc list-inside space-y-3 text-slate-600">
+                                    <li><strong class="font-semibold text-slate-700">案件關聯：</strong>由綜規司立案，透過控管編號 `-1` (主政)、`-2`, `-3` (協辦) 標示案件關聯性。</li>
+                                    <li><strong class="font-semibold text-slate-700">檢視權限：</strong>主政單位(-1)的承辦人及長官，可 **檢視** 所有協辦案件的辦理情形，但不可編輯。</li>
+                                    <li><strong class="font-semibold text-slate-700">資料匯出：</strong>主政單位可匯出所有關聯案件的辦理資料，便於彙整。</li>
+                                </ul>
+                            </div>
+                            <div id="se-3" class="tab-content hidden">
+                                <h4 class="font-bold text-xl mb-3 text-slate-700">施政績效指標列管：功能說明</h4>
+                                 <ul class="list-disc list-inside space-y-3 text-slate-600">
+                                    <li><strong class="font-semibold text-slate-700">資料匯入：</strong>由「施政先期作業」自動帶入年度施政目標與關鍵績效指標資料。</li>
+                                    <li><strong class="font-semibold text-slate-700">期中/末追蹤：</strong>各權責單位(機關)線上填報各指標的達成情形、落後原因檢討及推動成果。</li>
+                                    <li><strong class="font-semibold text-slate-700">報告產出：</strong>年底可將各單位填報的達成情形，匯出一份完整的Word格式報告。</li>
+                                </ul>
+                            </div>
+                            <div id="se-4" class="tab-content hidden">
+                                 <h4 class="font-bold text-xl mb-3 text-slate-700">行政院重要政策指標追蹤：功能說明</h4>
+                                 <ul class="list-disc list-inside space-y-3 text-slate-600">
+                                    <li><strong class="font-semibold text-slate-700">指標建立：</strong>由綜規司將行政院核定需自行追蹤管制的指標，手動鍵入列管系統。</li>
+                                    <li><strong class="font-semibold text-slate-700">期中/末追蹤：</strong>各權責單位(機關)線上填報各指標的達成情形、落後原因檢討及改善措施。</li>
+                                    <li><strong class="font-semibold text-slate-700">報告產出：</strong>年底可將各單位填報的達成情形，匯出一份完整的Word格式報告。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide: Committee Digitization -->
+            <section id="committee-digitization" class="slide">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-green-600 mb-6 border-b pb-2">外聘委員評比電子化：三大業務項目</h2>
+                    <div class="space-y-6">
+                        <!-- Item 1 -->
+                        <div class="p-5 rounded-lg border bg-slate-50">
+                            <h3 class="font-bold text-lg text-slate-800">個案計畫評核</h3>
+                            <p class="text-sm text-slate-500 mt-1 mb-3">將個案計畫的初評、意見回覆、複評流程全面線上化。</p>
+                            <p class="text-slate-600 text-sm">
+                                <strong class="font-semibold">核心流程：</strong>
+                                委員線上閱覽&rarr;鍵入初評意見&rarr;受評單位線上回覆(系統具時效通知)&rarr;委員鍵入最終評分&rarr;系統產出統計報表。
+                            </p>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="p-5 rounded-lg border bg-slate-50">
+                            <h3 class="font-bold text-lg text-slate-800">公文檢核</h3>
+                            <p class="text-sm text-slate-500 mt-1 mb-3">建立線上公文抽檢與評分機制，處理大量公文資料。</p>
+                            <p class="text-slate-600 text-sm">
+                                <strong class="font-semibold">核心流程：</strong>
+                                綜規司上傳公文&rarr;委員線上依「評分標準表」勾選、填寫意見&rarr;系統自動彙整每位委員及各單位總評分報表。<br>
+                                <span class="text-red-600 font-medium">注意：需考量大檔案處理能力 (113年約1.82GB)。</span>
+                            </p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="p-5 rounded-lg border bg-slate-50">
+                            <h3 class="font-bold text-lg text-slate-800">政府服務獎部內評選</h3>
+                            <p class="text-sm text-slate-500 mt-1 mb-3">支援政府服務獎部內評選作業，包含分組評比與二階段審查。</p>
+                            <p class="text-slate-600 text-sm">
+                                <strong class="font-semibold">核心流程：</strong>
+                                系統支援分組評比&rarr;委員依組別審查提供意見&rarr;受評單位線上回覆&rarr;委員進行第二次審查。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navButtons = document.querySelectorAll('.nav-button');
+            const slides = document.querySelectorAll('.slide');
+
+            navButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.dataset.target;
+
+                    // Update active button
+                    navButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    // Update active slide
+                    slides.forEach(slide => {
+                        if (slide.id === targetId) {
+                            slide.classList.add('active');
+                        } else {
+                            slide.classList.remove('active');
+                        }
+                    });
+                });
+            });
+
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const targetId = tab.dataset.tab;
+
+                    // Update active tab
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    
+                    // Update active tab content
+                    tabContents.forEach(content => {
+                        if (content.id === targetId) {
+                            content.classList.remove('hidden');
+                        } else {
+                            content.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
